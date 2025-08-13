@@ -4,47 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: left;
-        }
-        thead {
-            background-color: white;
-        }
-        tfoot {
-            background-color: aliceblue;
-            font-weight: bold;
-        }
-    </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th>Nombres</th>
-                <th>Apellidos</th>
-                <th>Cédula</th>
-                <Th>Teléfono</Th>
-                <th>Correo</th>
-                <th>Fecha de Nacimiento</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Juan Sebastián</td>
-                <td>Patiño Hernández</td>
-                <td>1005331719</td>
-                <td>3125916384</td>
-                <td>jseb.patino@gmail.com</td>
-                <td>29/05/2003</td>
-            </tr>
-        </tbody>
-    </table>
+    <form action="">
+        <fieldset>
+            <table>
+                <legend>DATOS DE CONTACTO</legend>
+                <tr>
+                    <th><label for="nombre">Nombre:</label></th>
+                    <th><input type="text" id="nombre" name="nombre" required></th>
+                </tr>
+                <tr>
+                    <th><label for="apellido">Apellido:</label></th>
+                    <th><input type="text" id="apellido" name="apellido" required></th>
+                </tr>
+                <tr>
+                    <th><label for="cedula">Cédula:</label></th>
+                    <th><input type="number" id="cedula" name="cedula" required></th>
+                </tr>
+                <tr>
+                    <th><label for="ciudad">Ciudad:</label></th>
+                    <th><select name="ciudad" id="ciudad" required>
+                        <option value="1">Seleccione</option>
+                        <option value="2">Bucaramanga</option>
+                        <option value="3">Girón</option>
+                        <option value="4">Floridanlanca</option>
+                        <option value="5">Piedecuesta</option>
+                        <option value="6">Lebrija</option>
+                    </select></th>
+                </tr>
+                <tr>
+                    <th><label for="fecha de nacimiento">Fecha de Nacimiento</label></th>
+                    <th><input type="date" id="imagen" name="fecha de nacimiento" required></th>
+                </tr>
+            </table>
+        </fieldset>
+        <br>
+        <button>Guardar</button>
+    </form>
 </body>
 </html>
